@@ -10,5 +10,3 @@ LINUXINCLUDE += -include $(SYNC_FENCE_ROOT)/config/kalamammdriversconf.h
 obj-$(CONFIG_QCOM_SPEC_SYNC) += sync_fence.o
 
 sync_fence-y := src/qcom_sync_file.o
-
-CDEFINES += -DBUILD_TIMESTAMP=\"$(shell date -u +'%Y-%m-%dT%H:%M:%SZ')\"
